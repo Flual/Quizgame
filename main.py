@@ -7,7 +7,7 @@ def new_game():
     correct_guesses = 0
     question_num = 1
 
-    # Nested forloop to display the Question with is answers
+    # Nested forloop to display the Question with its answers
     for key in questions:
         print("# ---------------------- #")
         print(key)
@@ -60,7 +60,7 @@ def display_score(correct_guesses, guesses):
 
 def play_again():
 
-    response = input("Do you want o play again?: (yes/no):")
+    response = input("Do you want to play again?: (yes/no):")
     response = response.lower()
 
     if response == "yes":
