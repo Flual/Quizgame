@@ -55,6 +55,12 @@ def display_score(correct_guesses, guesses):
     score = int((correct_guesses/len(questions))*100)
     print("Your score is: "+str(score)+"%")
 
+    if score >= 60:
+        print("You passed!")
+    else:
+        print("You failed!\nPlease try again!")
+
+
 # ----------------------
 
 
@@ -93,4 +99,4 @@ new_game()
 while play_again():
     new_game()
 
-print("Bye!")
+print("Goodbye!")
